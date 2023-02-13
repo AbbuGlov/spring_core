@@ -85,6 +85,9 @@ public class EmployeDaoImpl implements EmployeDao{
 		Employe e=this.jdbcTemp.queryForObject(sql,new RowMapperr(),id);
 		
 				System.out.println(sql);
+				System.out.println(sql);
+				System.out.println(sql);
+				System.out.println(sql);
 		
 		return e;
 	}
