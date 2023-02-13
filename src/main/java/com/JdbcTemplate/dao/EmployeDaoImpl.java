@@ -17,15 +17,9 @@ public class EmployeDaoImpl implements EmployeDao{
 
 		@Override
 		public Employe mapRow(ResultSet rs, int rowNum) throws SQLException {
-			
-			
-			
-			
+				
 			return new Employe(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4));
 		}
-		
-		
-		
 		
 	}
 	
@@ -90,7 +84,7 @@ public class EmployeDaoImpl implements EmployeDao{
 		
 		Employe e=this.jdbcTemp.queryForObject(sql,new RowMapperr(),id);
 		
-				
+				System.out.println(sql);
 		
 		return e;
 	}
